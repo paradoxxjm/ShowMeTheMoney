@@ -1,0 +1,52 @@
+
+*{margin:0;padding:0;}
+
+h1 {
+   text-align: center;
+}
+
+body {
+  background-color: #FFF;
+}
+
+#content {
+  background-color: #FFF;
+  padding: 20px 0;
+}
+
+.grouping {
+  width: 1300px;
+  margin: 20px auto;
+  border: solid 2px #333333;
+}
+
+.grouping h2{
+  margin: 20px;
+}
+
+#content form {
+  text-align: center;
+  margin: 10px auto;
+}
+
+#content form select {
+  font-size: 14px;
+  padding: 3px;
+  width: 300px;
+}
+
+#juxtaposed {
+  font-size: 14px;
+  padding: 5px;
+  border: solid 1px #333;
+}
+
+#juxtaposed:hover {
+  color: #F00;
+}
+
+.grouping p{
+  padding: 10px;
+  font-size: 12px;
+
+}
