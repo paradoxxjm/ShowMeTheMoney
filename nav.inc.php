@@ -1,6 +1,6 @@
 <div class="clearfix" id="siteHeader">
         <div class="clearfix">
-    <h1 class="appLogo" id="mainLogo"><a accesskey="h" href="http://www.worldbank.org/">World Bank Group</a></h1>
+    <!--<h1 class="appLogo" id="mainLogo"><a accesskey="h" href="http://www.worldbank.org/">World Bank Group</a></h1>-->
 
     <ul class="languageMenu">
         <li><a href="" class="active">English</a></li><li><a href="http://www.bancomundial.org/">Español</a></li><li><a href="http://www.banquemondiale.org/">Français</a></li><li><a href="http://www.albankaldawli.org/" class="strong">عربي</a></li><li><a href="http://www.worldbank.org/russian">Русский</a></li><li><a href="http://www.worldbank.org.cn/Chinese/">中文</a></li><li><a href="http://www.worldbank.org/languages" class="allLanguages">All Languages</a></li>
