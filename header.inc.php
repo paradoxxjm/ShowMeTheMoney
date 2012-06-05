@@ -9,7 +9,23 @@ const TOTAL_CONTRACT_AMOUNT_INDEX = 25;
 
 
 $jsonurl = "https://finances.worldbank.org/api/views/kdui-wcs3/rows.json?search=".urlencode($country_codes[$country_code]);
-$json = file_get_contents($jsonurl,0,null,null);
+
+
+# using Curl instead of file-get.
+#$json = file_get_contents($jsonurl,0,null,null);
+
+
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_HEADER, 0);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+curl_setopt($ch, CURLOPT_FAILONERROR,0 );
+curl_setopt($ch, CURLOPT_URL, $jsonurl);
+$json = curl_exec($ch);
+curl_close ($ch);
+
+
 $json_output = json_decode($json);
 
 $num_results =  count($json_output->data);
