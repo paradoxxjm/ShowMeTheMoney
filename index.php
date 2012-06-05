@@ -37,6 +37,7 @@ if (isset($_GET["country_code"])) {
     <!--[if lte IE 8]><link rel="stylesheet" href="./Leaflet/leaflet.ie.css" /><![endif]-->
     <script src="./Leaflet/leaflet.js"></script>
     <script src="./arc.js"></script>
+    <script src="./arc_map.js"></script>
 
     <meta name="viewport" content="width=device-width; initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
