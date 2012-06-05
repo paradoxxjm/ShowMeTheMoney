@@ -26,7 +26,7 @@ if (isset($_GET["country_code"])) {
          Remove this if you use the .htaccess -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <title>Where does the money really go ?</title>
+    <title>Show Me the Money!</title>
     <meta name="description" content="" />
     <link type="text/css" rel="stylesheet" media="all" href="https://finances.worldbank.org/styles/merged/base.css?9c036218b2bed9731820a76a21514981aaecf6e6.233"/>
     <link type="text/css" rel="stylesheet" media="all" href="https://finances.worldbank.org/styles/current_site.css"/>
@@ -157,7 +157,6 @@ if (isset($_GET["country_code"])) {
 <?php elseif (!$is_juxtaposed) : ?>
               <div class="grouping">
 
-                <b>RHOK Featured Problem: Show me the Money.</b>
                 <h2>Where Does the Money Really go?</h2>
                 <p>
                   <b>Problem:</b> Billions of dollars in aid and/or grant money flow into various nations of the world. How much of that money stays "in country?" Presumably, this has implications on longer-term impact on development funding's impact through local job creation. However, that money sometimes ends up flowing outside the beneficiary country to a foreign supplier. If the money is utilized in the country of origin (to original target to which the aid/grant was initially given to), that could go a long way in promoting sustainable development- but first we need to know where the money really goes.

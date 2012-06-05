@@ -50,3 +50,8 @@ body {
   font-size: 12px;
 
 }
+
+#siteHeader .descriptionContainer  {
+  background-image: none;
+  background-color: #2E88C7;
+}
