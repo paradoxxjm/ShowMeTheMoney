@@ -204,7 +204,7 @@ if (isset($_GET["country_code"])) {
                   <b>Get the data:</b>
                   <br>
                   <br>
-                  <a href="bit.ly/WBContracts">Major WB Contracts Award data</a>
+                  <a href="http://bit.ly/WBContracts" target="_blank">Major WB Contracts Award data</a>
                   <br>
                   <br>
                   This set of procurement contract awards includes data on commitments against contracts that were reviewed and agreed to by Bank staff before they were awarded (prior-review Bank-funded contracts) awarded under IDA/IBRD investment projects and related Trust Funds.This dataset does not list all contracts awarded by the Bank, and should be viewed only as a guide to determine the distribution of major contracts among the Bank's member countries. The Procurement Policy and Services Group does not guarantee the data included in this publication and accepts no responsibility whatsoever for any consequences of its use.
