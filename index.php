@@ -53,15 +53,15 @@ if (isset($_GET["country_code"])) {
         function drawChart() {
           var data_total = google.visualization.arrayToDataTable([
             ['Spent Where?', 'How Much?'],
-            ['Stayed In Country',     <?php echo $in_country_total ?>],
-          [' Flowed Out of Country', <?php echo $out_of_country_total ?>]
+            ['"Stayed In" Country',     <?php echo $in_country_total ?>],
+          ['"Flowed Out" of Country', <?php echo $out_of_country_total ?>]
         ]);
 
 
         var data_count = google.visualization.arrayToDataTable([
           ['Spent Where?', 'How Many?'],
-          ['Stayed In Country',     <?php echo $in_country_count ?>],
-          ['Flowed Out of Country', <?php echo $out_of_country_count ?>]
+          ['"Stayed In" Country',     <?php echo $in_country_count ?>],
+          ['"Flowed Out" of Country', <?php echo $out_of_country_count ?>]
         ]);
 
         var options_total = {
