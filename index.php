@@ -188,7 +188,7 @@ if (isset($_GET["country_code"])) {
                   <b>The Team:</b>
                   <br>
                   <br>
-                  Matt Glover, mpglover@gmail.com
+                  Matt Glover
                   <br>Serign Jobe, serignjobe@gmail.com
                   <br>Vijay Rao, mail.vjrao@gmail.com
                   <br>Nehaumma Reddy, nehaummareddy@gmail.com
