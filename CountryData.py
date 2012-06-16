@@ -1,6 +1,3 @@
-##  To run this file : python CountryData.py
-##  Will spit out Json output.
-
 import urllib
 import json
 
@@ -13,10 +10,7 @@ label_in = "InOut"
 label_total_in_amount = "TotalInAmt"
 label_total_out_amount= "TotalOutAmt"
 
-def getAllContracts(contract_url):
-"""
-This function calls the required API to pull data from the external service.
-"""
+def getAllContractsFromUrl(contract_url):
     str_output = urllib.urlopen(contract_url).read()
     jdata=json.loads(str_output)
     #data_dict={}
@@ -24,9 +18,7 @@ This function calls the required API to pull data from the external service.
     return  row_list
 
 def parse_contract_row(row):
-"""
-Each row pulled from the API is parsed here
-"""
+    start_num=8  # field index
     fld_calendar_date=8
     fld_fiscal_year=9
     fld_region=10
@@ -34,17 +26,21 @@ Each row pulled from the API is parsed here
     fld_borrower_country_cd=12
     fld_project_id=13
     fld_project_name=14
-    fld_main_loan_credit=15
-    fld_procurement_type=16
-    fld_procurement_cat=17
-    fld_proc_method=18
+    #fld_main_loan_credit=15
+    fld_procurement_type=15
+    fld_procurement_cat=16
+    fld_proc_method=17
+    fld_product_line=18
     fld_wb_contract_no=19
-    fld_wb_contract_desc=20
-    fld_wb_contract_refno=21
+    fld_major_sector=20
+    fld_wb_contract_desc=21
+
+    #fld_wb_contract_refno=21
     fld_contract_dt=22
     fld_supplier=23
     fld_supplier_country=24
-    fld_total_contract_amt=25
+    fld_supplier_country_cd=25
+    fld_total_contract_amt=26
     
     borrower_country_cd = row[fld_borrower_country_cd]
     borrower_country_name = row[fld_borrower_country_name]
@@ -61,10 +57,7 @@ Each row pulled from the API is parsed here
     return mydata
 
 def build_output_rows():
-"""
-This function builds the result set , in a format suitable for summarization
-"""
-    row_list=getAllContracts("https://finances.worldbank.org/api/views/kdui-wcs3/rows.json")
+    row_list=getAllContractsFromUrl("https://finances.worldbank.org/api/views/kdui-wcs3/rows.json")
     #print "Num contracts:" + str(len(row_list))
     result_dict={}
     for i in row_list:
@@ -92,9 +85,6 @@ This function builds the result set , in a format suitable for summarization
 
 
 def summarizeByCountry(mydict):
-"""
-This function summarizes the data as required
-"""
     summary_dict={}
     count_countries=0
     for i in mydict.keys():
