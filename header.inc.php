@@ -5,7 +5,7 @@ require_once 'country_codes.inc.php';
 const BORROWER_COUNTRY_INDEX = 11;
 const BORROWER_COUNTRY_CODE_INDEX = 12;
 const SUPPLIER_COUNTRY_INDEX = 24;
-const TOTAL_CONTRACT_AMOUNT_INDEX = 25;
+const TOTAL_CONTRACT_AMOUNT_INDEX = 26;
 
 function get_url_content($url){
   $ch = curl_init();
